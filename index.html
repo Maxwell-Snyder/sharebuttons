@@ -75,7 +75,7 @@
                 document.getElementById ("bg").style.marginTop = "-100%";
                 document.getElementById ("pop").style.display = "none";
                 document.getElementById ("pop1").style.display = "none";
-                document.getElementById ("pop2").style.top = "-100%";
+                document.getElementById ("pop2").style.left = "200%";
                 document.getElementById ("pop3").style.display = "none";
                 document.getElementById ("pop4").style.display = "none";
             }
@@ -93,7 +93,7 @@
             }
 
             function p3 () {
-                document.getElementById ("pop2").style.top = "50%";
+                document.getElementById ("pop2").style.left = "50%";
                 document.getElementById ("bg").style.marginTop = "0px";
                 document.title = "Reddit - Share Buttons";
             }    
@@ -116,8 +116,7 @@ body {
     position:fixed;
     top:50%;
     transition:all 0.25s;
-    display:none;
-    left:50%;
+    left:-100%;
     -moz-transform:translateX(-50%) translateY(-50%);
     -webkit-transform:translateX(-50%) translateY(-50%);
     transform:translateX(-50%) translateY(-50%);
