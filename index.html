@@ -83,19 +83,19 @@
 
             function p1 () {
                 document.getElementById ("pop").style.display = "block";
-                document.getElementById ("bg").style.display = "block";
+                document.getElementById ("bg").style.marginTop = "0px";
                 document.title = "Email - Share Buttons";
             }
 
             function p2 () {
                 document.getElementById ("pop1").style.display = "block";
-                document.getElementById ("bg").style.display = "block";
+                document.getElementById ("bg").style.marginTop = "0px";
                 document.title = "SMS - Share Buttons";
             }
 
             function p3 () {
                 document.getElementById ("pop2").style.display = "block";
-                document.getElementById ("bg").style.display = "block";
+                document.getElementById ("bg").style.marginTop = "0px";
                 document.title = "Reddit - Share Buttons";
             }    
         </script>
@@ -143,11 +143,11 @@ body {
 
 #bg {
     width:999vh;
-    height:999vh;
-    background-color:black;
+    height:100%;
+    background-color:transparent;
     opacity:0.85;
     position:fixed;
-    display:none;
+    margin-top:-100%;
 }
 
 nav {
