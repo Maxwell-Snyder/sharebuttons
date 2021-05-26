@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <link href = "https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css" rel = "stylesheet">
+        <link rel = "icon" href = "http://pngimg.com/uploads/share/small/share_PNG24.png" type = "image/x-icon"> 
+		<title>Home - Share Buttons</title>
+	</head>
+	<body>
+        <div id = "bg">
+
+        </div>
+		<nav>
+            <h1>Share buttons</h1>
+        </nav>
+        <div id = "pop">
+            <button id = "close" onclick = "hide()">×</button>
+            <br>
+            <br>
+            <br>
+            <p>Below is how you share via email</p>
+            <xmp><a href = "mailto:"></a></xmp>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div id = "pop1">
+            <button id = "close" onclick = "hide()">×</button>
+            <br>
+            <br>
+            <br>
+            <p>Below is how you share via sms</p>
+            <xmp><a href = "sms://+?body="></a></xmp>
+            <br>
+            <br>
+            <br>
+        </div>
+        <div id = "pop2">
+            <button id = "close" onclick = "hide()">×</button>
+            <br>
+            <br>
+            <br>
+            <p>Below is how you share via Reddit</p>
+            <xmp><a href = "https://reddit.com/submit?
+            url=&title="></a></xmp>
+            <br>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id = "home">
+            <button id = "e" onclick = "p1()"><i class = "fas fa-envelope fa-3x"></i><br><label id = "type">Email</label></button>
+            <br>
+            <button id = "e" onclick = "p2()"><i class = "fas fa-sms fa-3x"></i><br><label id = "type">SMS</label></button>
+            <br>
+            <button id = "e" onclick = "p3()"><i class = "fab fa-reddit fa-3x"></i><br><label id = "type">Reddit</label></button>
+            <!--
+            <button id = "e" onclick = "p4()"><i class = "fab fa-twitter fa-3x"></i><br><label id = "type">Twitter</label></button>
+            <button id = "e" onclick = "p5()"><i class = "fab fa-reddit fa-3x"></i><br><label id = "type">Reddit</label></button>
+            -->
+        </div>
+        <br>
+        <p>Im trying to add more when I can so check back every once and a while!</p>
+        <br>
+        <script>
+            function hide () {
+                document.getElementById ("bg").style.display = "none";
+                document.getElementById ("pop").style.display = "none";
+                document.getElementById ("pop1").style.display = "none";
+                document.getElementById ("pop2").style.display = "none";
+                document.getElementById ("pop3").style.display = "none";
+                document.getElementById ("pop4").style.display = "none";
+            }
+
+            function p1 () {
+                document.getElementById ("pop").style.display = "block";
+                document.getElementById ("bg").style.display = "block";
+                document.title = "Email - Share Buttons";
+            }
+
+            function p2 () {
+                document.getElementById ("pop1").style.display = "block";
+                document.getElementById ("bg").style.display = "block";
+                document.title = "SMS - Share Buttons";
+            }
+
+            function p3 () {
+                document.getElementById ("pop2").style.display = "block";
+                document.getElementById ("bg").style.display = "block";
+                document.title = "Reddit - Share Buttons";
+            }    
+        </script>
+        <style>
+            * {
+    margin:0;
+    padding:0;
+}
+
+body {
+	font-family:"Roboto", sans-serif;
+    text-align:center;
+}
+
+#pop, #pop1, #pop2, #pop3, #pop4 {
+    background-color:white;
+    border-radius:5px;
+    width:300px;
+    position:fixed;
+    top:50%;
+    display:none;
+    left:50%;
+    -moz-transform:translateX(-50%) translateY(-50%);
+    -webkit-transform:translateX(-50%) translateY(-50%);
+    transform:translateX(-50%) translateY(-50%);
+}
+
+#close {
+    width:40px;
+    height:40px;
+    background-color:transparent;
+    border:transparent;
+    border-radius:5px;
+    float:right;
+    font-size:24px;
+}
+
+#close:hover {
+    background-color:gainsboro;
+}
+
+#close:active {
+    background-color:lightgray;
+}
+
+#bg {
+    width:999vh;
+    height:999vh;
+    background-color:black;
+    opacity:0.85;
+    position:fixed;
+    display:none;
+}
+
+nav {
+    width:100%;
+    height:50px;
+    background-color:lightgreen;
+    border:transparent;
+    position:fixed;
+}
+
+h1 {
+    font-size:28px;
+    margin-left:10px;
+    margin-top:7.5px;
+    float:left;
+}
+
+#type {
+    font-size:30px;
+    cursor:pointer;
+}
+
+#e {
+    width:200px;
+    height:150px;
+    background-color:#82EEFD;
+    border:transparent;
+    border-radius:5px;
+    margin:1px;
+}
+
+#e:hover {
+    background-color:skyblue;
+}
+
+#e:active {
+    transform:scale(0.95);
+}
+
+button {
+    cursor:pointer;
+    font-family:"Roboto", sans-serif;
+    transition:all 0.25s;
+    outline:none;
+}
+        </style>
+	</body>
+</html>
