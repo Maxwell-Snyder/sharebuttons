@@ -59,6 +59,17 @@
             <br>
             <br>
         </div>
+        <div id = "pop4" style = "width:550px;">
+            <button id = "close" onclick = "hide()">×</button>
+            <br>
+            <br>
+            <br>
+            <p>Below is how you share via Facebook</p>
+            <xmp><a href = "https://www.facebook.com/sharer/sharer.php?u=;src=sdkpreparse" target = "_blank">Facebook</a></xmp>
+            <br>
+            <br>
+            <br>
+        </div>
         <br>
         <br>
         <br>
@@ -71,10 +82,7 @@
             <button id = "e" onclick = "p3()"><i class = "fab fa-reddit fa-3x"></i><br><label id = "type">Reddit</label></button>
 	    <br>
 	    <button id = "e" onclick = "p4()"><i class = "fab fa-twitter fa-3x"></i><br><label id = "type">Twitter</label></button>
-            <!--
-            <button id = "e" onclick = "p4()"><i class = "fab fa-twitter fa-3x"></i><br><label id = "type">Twitter</label></button>
-            <button id = "e" onclick = "p5()"><i class = "fab fa-reddit fa-3x"></i><br><label id = "type">Reddit</label></button>
-            -->
+            <button id = "e" onclick = "p5()"><i class = "fab fa-facebook fa-3x"></i><br><label id = "type">Twitter</label></button>
         </div>
         <br>
         <p>Im trying to add more when I can so check back every once and a while!</p>
@@ -115,6 +123,12 @@
                 document.getElementById ("bg").style.display = "block";
                 document.title = "Twitter - Share Buttons";
             }    
+		
+            function p5 () {
+                document.getElementById ("pop4").style.left = "50%";
+                document.getElementById ("bg").style.display = "block";
+                document.title = "Facebook - Share Buttons";
+            }   	    
         </script>
         <style>
             * {
